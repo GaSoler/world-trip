@@ -27,5 +27,15 @@ export const theme = extendTheme({
                 color: 'gray.700',
             }
         }
-    }
+    },
+    components: {
+        Divider: {
+          defaultProps: { size: "md" },
+          sizes: {
+            lg: { borderWidth: "4px" },
+            md: { borderWidth: "2px" },
+            sm: { borderWidth: "1px" },
+          },
+        },
+      },
 })
