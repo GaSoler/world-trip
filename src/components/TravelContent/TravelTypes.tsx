@@ -4,7 +4,7 @@ export function TravelTypes() {
     return (
         <Flex
             width='100%'
-            justifyContent='space-around'
+            justifyContent='space-between'
         >
             <Flex
                 direction='column'
@@ -35,7 +35,7 @@ export function TravelTypes() {
                     praia
                 </Text>
             </Flex>
-
+            
             <Flex
                 direction='column'
                 alignItems='center'
