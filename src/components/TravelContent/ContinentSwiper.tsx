@@ -1,4 +1,4 @@
-import { Box, Button, Link } from '@chakra-ui/react';
+import { Box, Button, Image, Link, Text } from '@chakra-ui/react';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper'
 
@@ -17,14 +17,14 @@ export function ContinentSwiper() {
             height='100vh'
             mb='40px'
         >
-            <Link href='https://google.com'>
+            <Link href='#'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
-                autoplay={{
+                /* autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,
-                }}
+                }} */
                 pagination={{
                     clickable: true,
                 }}
@@ -32,7 +32,21 @@ export function ContinentSwiper() {
                 modules={[Autoplay, Pagination, Navigation]}
                 className={styles.swiper}
             >
-                <SwiperSlide className={styles['swiper-slide']}>Slide 1</SwiperSlide>
+                <SwiperSlide className={styles['swiper-slide']}>
+                    <Image src='\continentSlides\europe.svg' />
+                    <Box
+                        display='flex' flexDirection='column' fontWeight='700' textDecoration='none'
+                    >
+                        <Text
+                            fontSize='5xl'
+                        >
+                            Europa
+                        </Text>
+                        <Text fontSize='2xl' >
+                            O continente mais antigo.
+                        </Text>
+                    </Box>
+                </SwiperSlide>
                 <SwiperSlide className={styles['swiper-slide']}>Slide 2</SwiperSlide>    
                 <SwiperSlide className={styles['swiper-slide']}>Slide 3</SwiperSlide>    
                 <SwiperSlide className={styles['swiper-slide']}>Slide 4</SwiperSlide>    
