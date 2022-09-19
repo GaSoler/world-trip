@@ -17,42 +17,42 @@ export function ContinentSwiper() {
             height='100vh'
             mb='40px'
         >
-            <Link href='#'>
-            <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
-                /* autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }} */
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
-                className={styles.swiper}
-            >
-                <SwiperSlide className={styles['swiper-slide']}>
-                    <Image src='\continentSlides\europe.svg' />
-                    <Box
-                        display='flex' flexDirection='column' fontWeight='700' textDecoration='none'
-                    >
-                        <Text
-                            fontSize='5xl'
+            <Link href='/continents/europe'>
+                <Swiper
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    navigation={true}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    className={`${styles.swiper}`}
+                >
+                    <SwiperSlide className={`${styles['swiper-slide']}`}>
+                        <Image src='\continentSlides\europe.svg' />
+                        <Box
+                            display='flex' flexDirection='column' fontWeight='700' textDecoration='none'
                         >
-                            Europa
-                        </Text>
-                        <Text fontSize='2xl' >
-                            O continente mais antigo.
-                        </Text>
-                    </Box>
-                </SwiperSlide>
-                <SwiperSlide className={styles['swiper-slide']}>Slide 2</SwiperSlide>    
-                <SwiperSlide className={styles['swiper-slide']}>Slide 3</SwiperSlide>    
-                <SwiperSlide className={styles['swiper-slide']}>Slide 4</SwiperSlide>    
-                <SwiperSlide className={styles['swiper-slide']}>Slide 5</SwiperSlide>    
-                <SwiperSlide className={styles['swiper-slide']}>Slide 6</SwiperSlide>    
-            </Swiper>
+                            <Text
+                                fontSize='5xl'
+                            >
+                                Europa
+                            </Text>
+                            <Text fontSize='2xl' >
+                                O continente mais antigo.
+                            </Text>
+                        </Box>
+                    </SwiperSlide>
+                    <SwiperSlide className={styles['swiper-slide']}>Slide 2</SwiperSlide>
+                    <SwiperSlide className={styles['swiper-slide']}>Slide 3</SwiperSlide>
+                    <SwiperSlide className={styles['swiper-slide']}>Slide 4</SwiperSlide>
+                    <SwiperSlide className={styles['swiper-slide']}>Slide 5</SwiperSlide>
+                    <SwiperSlide className={styles['swiper-slide']}>Slide 6</SwiperSlide>
+                </Swiper>
             </Link>
         </Box>
     );
